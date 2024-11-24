@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+// Componente que devuelve la cabecera con los botones de navegación
 const Navegacion = () => {
 
     return (

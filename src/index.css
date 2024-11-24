@@ -44,12 +44,31 @@
   padding: 10px;
   text-align: left;
   border: 1px solid #ddd;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contenedorTabla th:hover {
+  background-color: #ddd; 
+}
+
+.contenedorTabla th:last-child:hover {
+  background-color: #f2f2f2;
+  cursor: default;
 }
 
 .contenedorTabla td {
   padding: 10px;
   border: 1px solid #ddd;
   text-align: left;
+}
+
+.contenedorTabla .botones {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 .contenedorTabla tr:hover {
@@ -67,9 +86,9 @@
 }
 
 .contenedorForm h1 {
-  font-size: 1.8em;
+  font-size: 1.4em;
   font-weight: bold;
-  margin-bottom: 1em;
+  margin-bottom: 12px;
   text-align: center;
 }
 
@@ -117,6 +136,20 @@
   background-color: #0056b3;
 }
 
+.contenedorTabla button {
+  padding: 4px 8px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contenedorTabla button:hover {
+  background-color: #0056b3;
+}
+
 .navegacion {
   display: flex;
   justify-content: center;
@@ -142,3 +175,54 @@
 .navegacion a {
   text-decoration: none;
 }  
+
+.fondo-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  z-index: 1001;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.modal button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal button:hover {
+  background-color: #0056b3;
+}
+
+.modal .botones {
+  display: flex;
+  gap: 1em;
+}
+
+.aviso {
+  margin: 50px auto;
+  text-align: center;
+  font-weight: bold;
+}
